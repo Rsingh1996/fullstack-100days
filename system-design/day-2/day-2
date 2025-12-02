@@ -1,0 +1,37 @@
+Streaming vs Batch Processing
+
+1. Streaming Processing
+   What is it?
+   Streaming (or real-time) processing means handling data as soon as it arrives, often in small pieces (events, messages, or records).
+
+When is Streaming Better?
+
+Real-time logs: Monitoring server logs for errors as they happen.
+Video processing: Live video filters, real-time video analytics, or streaming video to users.
+Fraud detection: Detecting suspicious transactions instantly.
+Live dashboards: Showing up-to-the-second metrics.
+How does it work?
+Data flows continuously through the system. Each event is processed as soon as it arrives.
+
+Tools:
+
+Kafka: Distributed event streaming platform, great for high-throughput, real-time pipelines.
+RabbitMQ: Message broker for passing messages between services in real-time.
+Apache Flink, Apache Storm, Spark Streaming: For complex real-time data processing. 2. Batch Processing
+What is it?
+Batch processing means collecting data over a period of time, then processing it all at once.
+
+When is Batch Better?
+
+ETL jobs: Extract, Transform, Load jobs that move and clean large amounts of data (e.g., nightly database updates).
+Analytics: Generating daily, weekly, or monthly reports.
+Data backups: Copying or archiving large datasets at scheduled times.
+Billing: Calculating monthly bills for all users at once.
+How does it work?
+Data is stored until a certain amount or time has passed, then processed in one go.
+
+Tools:
+
+Apache Hadoop: Classic batch processing framework.
+Apache Spark: Can do both batch and streaming, but often used for batch analytics.
+AWS Glue, Google Dataflow: Managed ETL and batch processing services.
